@@ -1,0 +1,6 @@
+# logs directory
+logs
+# clj classpath cache
+.cpcache
+# target
+target
