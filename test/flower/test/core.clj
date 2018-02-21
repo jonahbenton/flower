@@ -3,7 +3,12 @@
     [clojure.test :refer :all]
     [flower :refer [defflow]]))
 
-; logback.configurationFile
+(defflow simplest {:start identity identity :end})
+
+(deftest simplest-test
+  (testing "simplest flow"
+    (is (= {} (simplest {})))))
+
 (defn is-valid-request?
   [context]
   true)
@@ -28,8 +33,6 @@
   [context]
   (assoc context :response {:status 200 :body "Success!"} ))
 
-(defflow simplest {:start identity identity :end})
-;
 (defflow basic-web-response
   {:start is-valid-request?
    is-valid-request? { true perform-request false return-invalid }

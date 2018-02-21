@@ -105,9 +105,9 @@ Flower encodes this flow as data, and assigns it to a var:
 
 Each symbol is a function taking a map and returning either a map or a boolean. 
 
-Functions that take and return maps are called Actions. 
+Functions that take and return maps are called *Actions*. 
 
-Functions that take a map and return a boolean are called Decisions.
+Functions that take a map and return a boolean are called *Decisions*.
 
 The var ```basic-web-handler``` is a function of a single parameter- a map- and returns a single value- a map- with the results of processing. 
 
@@ -159,7 +159,6 @@ You should see
 {:response {:status 200, :body "Success!"}}
 ```
 
-
 ## Motivation
 
 Flower grew out in the loam of a deceased project to build an on-prem workflow engine, modeled on Amazon's Simple Workflow Service. SWS models workflows as graphs containing action nodes and decision nodes. 
@@ -180,7 +179,7 @@ https://code.joejag.com/2016/anti-if-the-missing-patterns.html
 
 Clojure encourages various flavors of data-oriented programming. Flower is another one.
 
-## Production
+## Maturity
 
 This is a toy implementation. It is rudimentary, lacks any optimizations, and is inappropriate for many projects. 
 
