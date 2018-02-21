@@ -8,18 +8,12 @@ https://francescocirillo.com/pages/anti-if-campaign
 
 ## Quickstart
 
-Add to project.clj:
+Add to deps.edn:
 
 ```
-[flower "0.1.0"]
+  jonahbenton/flower   {:git/url "https://github.com/jonahbenton/flower"
+                        :sha "cf6fbe094c9f2187c2b4e69517aff457c88dec52"} 
 ```
-
-Or deps.edn:
-
-```
-flower          {:mvn/version "0.1.0" }
-```
-
 
 Paste into a repl:
 
